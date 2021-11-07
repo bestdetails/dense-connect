@@ -1,5 +1,6 @@
 # 密集连接通用化版本1，仍然是测试Block，这里的Block只有一层CNN
 # 主要在Chain中添加为每个Block获取前置所有输入的函数get_downsample
+
 import torch
 import torch.nn as nn
 import math
