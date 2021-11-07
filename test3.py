@@ -1,3 +1,10 @@
+# 新的想法实现
+# BasicBlock初始不带任何downsample，传递进Chain后，由Chain的构造函数
+# 负责获取各个BasicBlock的状态，为每个BasicBlock拿到其对应的downsample
+# 接着重新创建BasicBlock对象，把获取到的downsample传递进BasicBlock构造函数
+# 这个过程相当于创建两次BasicBlock对象，但是不会像test2.py那样，每个block
+# 对应的downsample都与该block分开（由此需要特别标注downsample的名字），
+# 当前实现可以之间在block中访问到对应的downsample
 import torch
 import torch.nn as nn
 import math
