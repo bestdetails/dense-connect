@@ -1,4 +1,4 @@
-# 自定义模型
+# 自定义模型，后面还需要修改
 import torch
 import torch.nn as nn
 import copy
